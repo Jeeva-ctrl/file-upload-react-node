@@ -151,6 +151,7 @@ export default function FileUpload(props) {
 
   return (
     <Container>
+      <h2 className="hd">File Upload</h2>
       {error && <Alert variant="danger">{error}</Alert>}
       {!error && progress && (
         <ProgressBar now={progress} label={`${progress}%`} />
